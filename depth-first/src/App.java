@@ -22,5 +22,7 @@ public class App {
 
         tree.preOrder();
         System.out.println("");
+        tree.nodeCounter(a);
+        System.out.println(tree.depth(a));
     }
 }
