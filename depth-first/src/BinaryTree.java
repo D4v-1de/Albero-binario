@@ -72,50 +72,52 @@ public class BinaryTree {
         if (root == null) {
             return 0;
         }
-        if (root.getLeft()==null && root.getRight()==null) {
+        if (root.getLeft() == null && root.getRight() == null) {
             return 1;
         }
 
-        return leavesCounter(root.getLeft())+leavesCounter(root.getRight());
+        return leavesCounter(root.getLeft()) + leavesCounter(root.getRight());
 
     }
 
-    public boolean searchNode(Node root, char letter){
-        
-        if (root==null) {
+    public boolean searchNode(Node root, char letter) {
+
+        if (root == null) {
             return false;
         }
-        if (root.getData()==letter) {
+        if (root.getData() == letter) {
             return true;
         }
 
         return searchNode(root.getLeft(), letter) || searchNode(root.getRight(), letter);
-        
+
     }
 
-    public int depth(Node root){
+    public int depth(Node root) {
 
-        if (root==null) {
-            return-1;
+        if (root == null) {
+            return -1;
         }
-        if (root.getLeft()==null&&root.getRight()==null) {
+        if (root.getLeft() == null && root.getRight() == null) {
             return 0;
         }
 
-        int leftDepth=depth(root.getLeft())+1;
-        int righDepth =depth(root.getRight())+1;
+        int leftDepth = depth(root.getLeft()) + 1;
+        int righDepth = depth(root.getRight()) + 1;
         return Math.max(leftDepth, righDepth);
 
     }
 
-    public void pathBetweenNodes(Node first, Node Second){
-
+    public int calcolaLivello(Node n) {
+        int livello = 0;
+        
+        return livello;
     }
 
-    public int nodeDepth(Node node){
+    public String mostraPercorso(Node start, Node end) {
+        String percorso = "";
 
-
-        return 0;
+        return percorso;
     }
 
 }
