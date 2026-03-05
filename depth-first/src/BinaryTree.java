@@ -108,4 +108,14 @@ public class BinaryTree {
 
     }
 
+    public void pathBetweenNodes(Node first, Node Second){
+
+    }
+
+    public int nodeDepth(Node node){
+
+
+        return 0;
+    }
+
 }
