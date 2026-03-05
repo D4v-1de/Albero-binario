@@ -110,14 +110,20 @@ public class BinaryTree {
 
     public int calcolaLivello(Node n) {
         int livello = 0;
-        
+
         return livello;
     }
 
     public String mostraPercorso(Node start, Node end) {
         String percorso = "";
+        
+        if (!searchNode(end, end.getData()) || !searchNode(start, start.getData())) {
+            percorso = "Uno dei due nodi non esiste";
+            return percorso;
+        }
 
         return percorso;
+
     }
 
 }
